@@ -71,7 +71,7 @@ A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que
  |Nome do Componente |Especificações|Preço R$ |
  |-------------------|--------------|------|
  |Transformador|trafo que transforma entradas de 110 ou 220 V em 24 V, com corrente de 1A|[38,77](https://www.baudaeletronica.com.br/transformador-trafo-1a-24v.html)|
- |Capacitor eletrolítico|1000uF / 16V|[0,46](https://www.baudaeletronica.com.br/capacitor-eletrolitico-1000uf-16v.html)|
+ |Capacitor eletrolítico|470uF / 25V|[0,41](https://www.baudaeletronica.com.br/capacitor-eletrolitico-470uf-25v.html)|
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
  |Resistor 100|100 Ω, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-100r-5-2w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
