@@ -38,16 +38,23 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
   de corrente, os momentos baixos do gráfico anterior, age como uma fonte para o resto do circuito.
   Para essa finalidade, quanto maior fosse a capacitância do capacitor, melhor seria, pois ele forneceria
   tensão suficiente para que o ripple, a variação de tensão, fosse mínima. Mas na prática, não se pode
-  usar um capacitor tão grande, tanto pelo custo quanto pelo tamanho. A partir de testes no Falstad é possível concluir que um capacitor
-  de 1000 µF é adequado para um ripple pequeno, além de ser um valor comercialmente comum e barato.
+  usar um capacitor tão grande, tanto pelo custo quanto pelo tamanho. Então o quão grande precisa ser o capacitor? O suficiente para que ele gere um ripple de no
+  máximo 10% da tensão que ele recebe. Encontramos esse valor pela seguinte fórmula:
+  ![image](https://user-images.githubusercontent.com/37711709/126876931-96d890dd-b88a-4575-923f-41feed4bca89.png)
+ a qual nos diz que um capacitor de 534 µF é suficiente. Vamos então escolher um capacitor de valor comercial um pouco acima desse. Na loja em que estamos comprando, o mais
+ próximo é o de 1000 µF, que é bem maior, mas como dissemos, com ripple, quanto maior melhor.
   
 ### - A regulação
-  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12 V, podemos usar o modelo comercial de Zener de 12 V. O zener precisa ser ligado em série com um resistor que vai consumir a tensão excedente gerada nesse ramo do circuito para que não queime
+  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12 V, podemos usar o modelo comercial de Zener de 12 V. O zener precisa ser ligado em série com um resistor que vai consumir a tensão excedente gerada nesse ramo do circuito para que não queime.
+  Para descobrir o valor de cada coisa, as seguintes contas foram feitas:
+  ![image](https://user-images.githubusercontent.com/37711709/126877552-89e4c366-7a38-436d-bca1-b6644a5716d8.png)
+
 
 ### - O circuito final no Falstad
-![image](https://user-images.githubusercontent.com/37711709/126852283-be6da977-5270-4caf-abfb-50f89dc9fec8.png)
+![image](https://user-images.githubusercontent.com/37711709/126877665-3e4faaa8-570e-4c88-9673-d24c699786d0.png)
 
-[link para o circuito no Falstad](https://tinyurl.com/yhf42j27)
+
+[link para o circuito no Falstad](https://tinyurl.com/ye7qpu7l)
 
 A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
 
@@ -65,7 +72,7 @@ A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que
  |Transformador|trafo que transforma entradas de 110 ou 220 V em 15 V, com corrente de 1A|[41,31](https://www.baudaeletronica.com.br/transformador-trafo-1a-15v.html)|
  |Capacitor eletrolítico|1000uF / 16V|[0,46](https://www.baudaeletronica.com.br/capacitor-eletrolitico-1000uf-16v.html)|
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
- |Resistor 560|560 Ω, 2W de potência|[0,39](https://www.baudaeletronica.com.br/resistor-560r-5-2w.html)|
+ |Resistor 33|33 Ω, 0.5W de potência|[0,14](https://www.baudaeletronica.com.br/resistor-33r-1-2w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
  |Diodo Zener|1N4744A, de 15V e 1 W|[0,20](https://www.baudaeletronica.com.br/diodo-zener-1n4744-15v-1w.html)|
  |Diodo retificador|1N5404, de 3A|4 x [0,34](https://www.baudaeletronica.com.br/diodo-1n5404.html)|
