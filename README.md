@@ -45,9 +45,9 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
  próximo é o de 1000 µF, que é bem maior, mas como dissemos, com ripple, quanto maior melhor.
   
 ### - A regulação
-  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12 V, podemos usar o modelo comercial de Zener de 12 V. O zener precisa ser ligado em série com um resistor que vai consumir a tensão excedente gerada nesse ramo do circuito para que não queime.
+  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12 V, podemos usar o modelo comercial de Zener de 13 V, logo acima disso. O zener precisa ser ligado em série com um resistor que vai consumir a tensão excedente gerada nesse ramo do circuito para que não queime.
   Para descobrir o valor de cada coisa, as seguintes contas foram feitas:
-  ![image](https://user-images.githubusercontent.com/37711709/126877552-89e4c366-7a38-436d-bca1-b6644a5716d8.png)
+  ![image](https://user-images.githubusercontent.com/37711709/126878509-092410b7-8e47-4c71-9118-b76afc42631a.png)
 
 
 ### - O circuito final no Falstad
@@ -74,7 +74,7 @@ A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
  |Resistor 33|33 Ω, 0.5W de potência|[0,14](https://www.baudaeletronica.com.br/resistor-33r-1-2w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
- |Diodo Zener|1N4744A, de 15V e 1 W|[0,20](https://www.baudaeletronica.com.br/diodo-zener-1n4744-15v-1w.html)|
+ |Diodo Zener|1N5350B, de 13V e 5 W|[1,34](https://www.baudaeletronica.com.br/diodo-zener-1n5350b-13v-5w.html)|
  |Diodo retificador|1N5404, de 3A|4 x [0,34](https://www.baudaeletronica.com.br/diodo-1n5404.html)|
  |Transistor NPN BC337|tensão máxima de 45V e corrente máxima IC de 500mA|[0,20](https://www.baudaeletronica.com.br/transistor-npn-bc337.html)|
  
