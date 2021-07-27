@@ -60,7 +60,7 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
 
 A montagem foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
 
-  - Transistor NPN: ligado da forma que está no circuito, ele controla a corrente que chegará na carga
+  - Transistor bipolar: ligado da forma que está no circuito, ele controla e amplifica a corrente que chegará na carga
   - Potenciômetro: é usado para controlar a tensão no terminal de saída, variando de 3V a 12V
   - Resistor de 2.2KΩ: regula a voltagem do circuito
 
