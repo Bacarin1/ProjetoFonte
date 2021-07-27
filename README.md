@@ -1,6 +1,6 @@
 # O projeto
 
-O projeto consiste em uma fonte de tensão ajustável, que deve ser ligada em uma entrada de 127 V de corrente alternada a 60 Hz e deve fornecer entre 3V a 12V e 100 mA
+O projeto consiste em uma fonte de tensão ajustável, que deve ser ligada em uma entrada de 127V de corrente alternada a 60 Hz e deve fornecer entre 3V a 12V e 100 mA
 de corrente contínua
 
 ## A fonte
@@ -8,8 +8,8 @@ de corrente contínua
 Uma fonte conforme a especificação precisa de algumas etapas e componentes para funcionar. São elas:
 
 ### - O transformador
-  é o que transforma a tensão de 127 V de entrada em uma tensão menor, para que passe pelos demais componentes. Para
-  essa fonte, foi utilizado um transformador que fornece uma tensão de saída de 24 V, mais próxima dos 12 V que queremos.
+  é o que transforma a tensão de 127V de entrada em uma tensão menor, para que passe pelos demais componentes. Para
+  essa fonte, foi utilizado um transformador que fornece uma tensão de saída de 24 V, mais próxima dos 12V que queremos.
   Agora que temos valores menores para trabalhar, podemos nos preocupar em deixar a corrente contínua
  
 ### - A retificação
@@ -26,8 +26,8 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
   
   onda após a retificação
   
-  É importante notar que cada diodo consome 0,7 V da tensão, portanto nossa tensão anterior de 24 V, nesse
-  ponto, já caiu levemente para 22,6 V (apenas dois diodos são usados por vez)
+  É importante notar que cada diodo consome 0,7V da tensão, portanto nossa tensão anterior de 24V, nesse
+  ponto, já caiu levemente para 22,6V (apenas dois diodos são usados por vez)
   
   Agora, o objetivo é deixar essa tensão com apenas cristas o mais estável possível
   
@@ -45,21 +45,22 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
  próximo é o de 470 µF.
   
 ### - A regulação
-  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12 V, podemos usar o modelo comercial de Zener de 13 V, logo acima disso. O zener precisa ser ligado em série com um resistor que vai consumir a tensão excedente gerada nesse ramo do circuito para que não queime.
-  Para descobrir o valor de cada coisa, as seguintes contas foram feitas:
-  ![image](https://user-images.githubusercontent.com/37711709/126880007-42db48d5-3b0d-4b5d-b8b0-cff4bf9977ca.png)
+  etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12V, podemos usar o modelo comercial de Zener de 13V, logo acima disso. Precisamos também ligar um resistor em série com o zener, para que ele não queime.
+  
+  Partimos então da escolha de um diodo zener de tensão Vz = 13V, e que tem como potência máxima 1 W. Vamos escolher um resistor de forma que a potência máxima dissipada pelo zener seja de 0,5 W, para dar certa margem. Temos, então, que:
+![image](https://user-images.githubusercontent.com/37711709/127086707-5b0e8467-49f0-4acb-ad1a-9b81313aaa67.png)
 
 
 
 ### - O circuito final no Falstad
-![image](https://user-images.githubusercontent.com/37711709/126880065-30782e70-d934-4b1c-967f-8998f241e2df.png)
+![image](https://user-images.githubusercontent.com/37711709/127088116-fb8c070f-13fb-4ba6-a1ff-80a22d0e6688.png)
 
 
-[link para o circuito no Falstad](https://tinyurl.com/yg83f8tj)
+[link para o circuito no Falstad](https://tinyurl.com/yzrw5wmq)
 
-A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
+A montagem foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
 
-  - Transistor: é usado para adequar a corrente que vai para o potenciômetro
+  - Transistor NPN: ligado da forma que está no circuito, ele controla a corrente que chegará na carga
   - Potenciômetro: é usado para controlar a tensão no terminal de saída, variando de 3V a 12V
   - Resistor de 2.2KΩ: regula a voltagem do circuito
 
@@ -73,7 +74,7 @@ A montagem, que contou com muita tentativa e erro, foi feita no simulador, o que
  |Transformador|trafo que transforma entradas de 110 ou 220 V em 24 V, com corrente de 1A|[38,77](https://www.baudaeletronica.com.br/transformador-trafo-1a-24v.html)|
  |Capacitor eletrolítico|470uF / 25V|[0,41](https://www.baudaeletronica.com.br/capacitor-eletrolitico-470uf-25v.html)|
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
- |Resistor 100|100 Ω, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-100r-5-2w.html)|
+ |Resistor 240|240 Ω, 1W de potência|[0,18](https://www.baudaeletronica.com.br/resistor-240r-5-1w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
  |Diodo Zener|1N5350B, de 13V e 5 W|[1,34](https://www.baudaeletronica.com.br/diodo-zener-1n5350b-13v-5w.html)|
  |Diodo retificador|1N5404, de 3A|4 x [0,34](https://www.baudaeletronica.com.br/diodo-1n5404.html)|
