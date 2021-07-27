@@ -76,7 +76,7 @@ A montagem foi feita no simulador, o que forneceu os valores necessários de cad
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
  |Resistor 240|240 Ω, 1W de potência|[0,18](https://www.baudaeletronica.com.br/resistor-240r-5-1w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
- |Diodo Zener|1N5350B, de 13V e 5 W|[1,34](https://www.baudaeletronica.com.br/diodo-zener-1n5350b-13v-5w.html)|
+ |Diodo Zener|1N4743, de 13V e 1 W|[0,19](https://www.baudaeletronica.com.br/diodo-zener-1n4743-13v-1w.html)|
  |Diodo retificador|1N5404, de 3A|4 x [0,34](https://www.baudaeletronica.com.br/diodo-1n5404.html)|
  |Transistor NPN BC337|tensão máxima de 45V e corrente máxima IC de 500mA|[0,20](https://www.baudaeletronica.com.br/transistor-npn-bc337.html)|
  
