@@ -56,7 +56,7 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
 ![image](https://user-images.githubusercontent.com/37711709/127088116-fb8c070f-13fb-4ba6-a1ff-80a22d0e6688.png)
 
 
-[link para o circuito no Falstad](https://tinyurl.com/yzrw5wmq)
+[link para o circuito no Falstad](https://tinyurl.com/yzs6bwgj)
 
 A montagem foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
 
