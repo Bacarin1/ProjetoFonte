@@ -77,10 +77,10 @@ A montagem foi feita no simulador, o que forneceu os valores necessários de cad
   - Resistor de 2.2KΩ: regula a voltagem do circuito
 
 ### - A montagem no software Eagle
-![image](https://media.discordapp.net/attachments/369234563911778306/870103026260652063/unknown.png?width=1302&height=669)
+![image](https://cdn.discordapp.com/attachments/369234563911778306/870393173405483018/unknown.png)
 Esquemático
 
-![image](https://media.discordapp.net/attachments/369234563911778306/870103118682157056/unknown.png?width=1245&height=669)
+![image](https://cdn.discordapp.com/attachments/369234563911778306/870393606748385360/unknown.png)
 PCB
   
  ### - Componentes e preços
