@@ -59,13 +59,16 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
   
 ![image](https://user-images.githubusercontent.com/37711709/127086707-5b0e8467-49f0-4acb-ad1a-9b81313aaa67.png)
 
+Essa é a resistência mínima que o resistor pode ter. Testando resistências acima disso, descobrimos que o circuito continua fornecendo uma tensão estável quando colocamos um resistor de até 2,7kΩ, então vamos escolher um desses. A vantagem é que, quanto maior esse resistor, menos corrente passa pelo diodo zener, e, como efeito, ele gasta menos potência e esquenta menos.
+
 
 
 ### - O circuito final no Falstad
-![image](https://user-images.githubusercontent.com/37711709/127088116-fb8c070f-13fb-4ba6-a1ff-80a22d0e6688.png)
+![image](https://user-images.githubusercontent.com/37711709/127557114-cbe6ff6c-8df1-4325-93b1-9b88d5c618a5.png)
 
 
-[link para o circuito no Falstad](https://tinyurl.com/ydoos4v6)
+
+[link para o circuito no Falstad](https://tinyurl.com/ydmfa28s)
 
 A montagem foi feita no simulador, o que forneceu os valores necessários de cada componente. Alguns outros componentes foram usados no circuito, e estão listados abaixo
 
@@ -88,9 +91,10 @@ PCB
  |Transformador|trafo que transforma entradas de 110 ou 220 V em 24 V, com corrente de 1A|[38,77](https://www.baudaeletronica.com.br/transformador-trafo-1a-24v.html)|
  |Capacitor eletrolítico|470uF / 25V|[0,41](https://www.baudaeletronica.com.br/capacitor-eletrolitico-470uf-25v.html)|
  |Resistor 2.2k|2.2 kΩ, 2W de potência|[0,38](https://www.baudaeletronica.com.br/resistor-2k2-5-2w.html)|
- |Resistor 240|240 Ω, 1W de potência|[0,18](https://www.baudaeletronica.com.br/resistor-240r-5-1w.html)|
+ |Resistor 2.7k|2.7 Ω, 1/2W de potência|[0,14](https://www.baudaeletronica.com.br/resistor-2k7-1-2w.html)|
  |Potenciômetro|Potenciômetro linear de 5000Ω|[1,99](https://www.baudaeletronica.com.br/potenciometro-linear-de-5k-5000.html)|
  |Diodo Zener|1N4743, de 13V e 1 W|[0,19](https://www.baudaeletronica.com.br/diodo-zener-1n4743-13v-1w.html)|
  |Diodo retificador|1N5404, de 3A|4 x [0,34](https://www.baudaeletronica.com.br/diodo-1n5404.html)|
  |Transistor NPN BC337|tensão máxima de 45V e corrente máxima IC de 500mA|[0,20](https://www.baudaeletronica.com.br/transistor-npn-bc337.html)|
+ ||total|R$ 43,44
  
