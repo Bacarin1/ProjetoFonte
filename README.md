@@ -8,7 +8,7 @@ de corrente contínua
 Uma fonte conforme a especificação precisa de algumas etapas e componentes para funcionar. São elas:
 
 ### - O transformador
-  é o que transforma a tensão de 127V de entrada em uma tensão menor, para que passe pelos demais componentes. Para
+  é o que transforma a tensão de 180V de entrada em uma tensão menor, para que passe pelos demais componentes. Para
   essa fonte, foi utilizado um transformador que fornece uma tensão de saída de 24 V, mais próxima dos 12V que queremos.
   Agora que temos valores menores para trabalhar, podemos nos preocupar em deixar a corrente contínua
  
