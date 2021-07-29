@@ -3,7 +3,7 @@
 O projeto consiste em uma fonte de tensão ajustável, que deve ser ligada em uma entrada de 127V de corrente alternada a 60 Hz e deve fornecer entre 3V a 12V e 100 mA
 de corrente contínua
 
-**[Vídeo explicativo](https://drive.google.com/file/d/1PzC8xFR-CPx5eXk0aPIuhjjqkAMP4i69/view?usp=sharing)**
+**[Vídeo explicativo](https://drive.google.com/file/d/1LYwIoo3KqqAePAGEwZrHCSvGdLBT7RUE/view?usp=sharing)**
 
 ## Grupo
 - Gabriel Bacarin Marcondes (10873351)
