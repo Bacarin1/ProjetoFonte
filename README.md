@@ -66,7 +66,7 @@ A montagem foi feita no simulador, o que forneceu os valores necessários de cad
 
 ### - A montagem no software Eagle
 ![image](https://media.discordapp.net/attachments/369234563911778306/870103026260652063/unknown.png?width=1302&height=669)
-Shematic
+Esquemático
 
 ![image](https://media.discordapp.net/attachments/369234563911778306/870103118682157056/unknown.png?width=1245&height=669)
 PCB
