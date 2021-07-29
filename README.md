@@ -40,6 +40,7 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
   tensão suficiente para que o ripple, a variação de tensão, fosse mínima. Mas na prática, não se pode
   usar um capacitor tão grande, tanto pelo custo quanto pelo tamanho. Então o quão grande precisa ser o capacitor? O suficiente para que ele gere um ripple de no
   máximo 10% da tensão que ele recebe. Encontramos esse valor pela seguinte fórmula:
+  
  ![image](https://user-images.githubusercontent.com/37711709/126879908-ea724e0a-bfeb-4d49-94d0-6d29a73d3e90.png)
  a qual nos diz que um capacitor de 370 µF é suficiente. Vamos então escolher um capacitor de valor comercial um pouco acima desse. Na loja em que estamos comprando, o mais
  próximo é o de 470 µF.
@@ -48,6 +49,7 @@ Uma fonte conforme a especificação precisa de algumas etapas e componentes par
   etapa em que a corrente recebe _tweaks_ para ficar conforme a especificação. Nessa etapa, é utilizado o diodo zener. Em diodos comuns, quando se atinge a tensão de ruptura, eles passam a deixar uma corrente extremamente grande passar por eles no sentido inverso. No diodo zener, quando se atinge uma tensão chamada tensão zener, ele passa a permitir a passagem de correntes de forma a manter constante a tensão entre seus terminais, agindo como um curto circuito. Isso tem como efeito, no circuito, "cortar" a tensão extra que tinhamos para o valor de sua tensão zener. Como queremos uma tensão de 12V, podemos usar o modelo comercial de Zener de 13V, logo acima disso. Precisamos também ligar um resistor em série com o zener, para que ele não queime.
   
   Partimos então da escolha de um diodo zener de tensão Vz = 13V, e que tem como potência máxima 1 W. Vamos escolher um resistor de forma que a potência máxima dissipada pelo zener seja de 0,5 W, para dar certa margem. Temos, então, que:
+  
 ![image](https://user-images.githubusercontent.com/37711709/127086707-5b0e8467-49f0-4acb-ad1a-9b81313aaa67.png)
 
 
