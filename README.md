@@ -6,7 +6,7 @@ de corrente contínua
 **[Vídeo explicativo](https://drive.google.com/file/d/1LYwIoo3KqqAePAGEwZrHCSvGdLBT7RUE/view?usp=sharing)**
 
 ## Grupo
-- Gabriel Bacarin Marcondes (10873351)
+- Bacarin (10873351)
 - Luis Eduardo de Brito Câmara (12690282)
 - Pedro Falcão Rocha (12692408)
 
